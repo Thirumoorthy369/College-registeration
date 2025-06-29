@@ -1,0 +1,104 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Form styles */
+.registration-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.form-header h2 {
+    font-weight: 700;
+}
+
+/* Student list styles */
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.student-table th, .student-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.student-table th {
+    background-color: rgba(0, 0, 0, 0.05);
+    font-weight: 600;
+}
+
+.student-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+/* Age group sections */
+.age-group {
+    margin-bottom: 3rem;
+}
+
+.age-group h3 {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid;
+    margin-bottom: 1.5rem;
+}
+
+/* Action buttons */
+.action-btn {
+    padding: 5px 10px;
+    margin: 0 3px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .registration-form {
+        padding: 1rem;
+    }
+    
+    .student-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* Theme switcher active state */
+.theme-option.active {
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.1);
+}
+
+/* Theme transition */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}

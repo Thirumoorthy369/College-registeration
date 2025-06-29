@@ -1,0 +1,54 @@
+:root {
+    --primary-color: #9b59b6;
+    --secondary-color: #8e44ad;
+    --background-color: #f5f6fa;
+    --text-color: #2c3e50;
+    --header-bg: linear-gradient(135deg, #9b59b6, #3498db);
+    --footer-bg: #34495e;
+    --card-bg: #ffffff;
+    --border-color: #dcdde1;
+    --hover-color: #f1f2f6;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.navbar {
+    background: var(--header-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand, .nav-link {
+    color: white !important;
+}
+
+.footer {
+    background-color: var(--footer-bg);
+    color: white;
+}
+
+.registration-form {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.student-table tr:hover {
+    background-color: var(--hover-color);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--primary-color);
+}
+
+.age-group h3 {
+    color: var(--primary-color);
+}
